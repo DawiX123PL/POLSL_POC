@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass{report}
 
 \usepackage{hyperref}
 
@@ -12,6 +12,8 @@
 \usepackage{standalone}
 \usepackage{tikz}
 \usepackage{tabularx}
+\usepackage{float}
+\usepackage[section]{placeins}
 
 \graphicspath{{img/}}
 \DeclareGraphicsExtensions{.pdf,.png,.jpg,.svg} %For pdflatex
@@ -19,14 +21,64 @@
 
 
 \begin{document}
+
+
+\begin{titlepage}
+    \begin{center}
+        \Huge
+        \textbf{Przetwarzanie Obrazów Cyfrowych}
+        \\ \vspace{1.5cm}
+        \Large
+        \textbf{Raport z ćwiczenia 1}        
+    \end{center}
+    \vspace{4.0cm}
+    \Large
+    Autor: \\
+    Dawid Kania
     
+\end{titlepage}
+
+
+\section{Cel ćwiczenia}
+
+Celem ćwiczenia jest zapoznanie się z różnymi formatami 
+zapisu grafiki rastrowej wykorztywanymi przy tworzeniu dokumentów
+cyfrowych, oraz stosowanymi w nich technikach kompresji
+
+
+\section{Porównanie róźnych formatów zapisu}
+
+
+Porównując poszczególne formaty zapisu możemy dostrzec że
+w przypadku obrazów syntetycznych takich jak rzuty ekranu
+metody kompresji (jpg i jp2) wprowadzają do obrazu nieprzyjemny szum. 
+Ponadto rozmiar plików jest większy niż plików zapisanych metodami bezstratnymi (png i gif).
+
+W przypadku rzeczywistych zdjęć różnice dla niewprawnego oka są
+ledwo zauważalne. Rozmiar obrazów skompresowanych metodami stratnymi jest znacznie mniejszy
+niż zdjęć zapisanych w formatach bezstratnych.
+
+Metody bezstratne najlepiej stosować dla obrazów syntetycznych takich jak
+wykresy, grafy i zrzuty ekranów gdzie szum wprowadzany przez stratne metody 
+kompresji może być wyrażnie zauważalny.
+
+Metody stratnej kompresji najlepiej stosować w przypadku zdjęć rzeczywistych
+gdzie szum z oryginalnego zdjęcia jest trudny do rozróżnienia od szumu wprowadzanego
+przez metody kompresji
+
+
+
+
+
+
+
 
 
 
 \newcommand{\ww}{0.32}
 
 
-\begin{figure}
+\begin{figure}[H]
     \captionsetup[subfloat]{position=bottom,labelformat=empty} %można usunąć labelformat wówczas będzie label a), b), c) plus "opis"
     \subfloat[ PNG         \\  PSNR = Inf     \\ size = 231.959kB   ]{\includegraphics[   width=\ww\linewidth]{../convertedImg/T1_4/c_1image.png.png       }} \hfill%
     \subfloat[ GIF         \\  PSNR = Inf     \\ size = 291.8145kB  ]{\includegraphics[   width=\ww\linewidth]{../convertedImg/T1_4/c_2image.gif.png       }} \hfill% wypełnenie
@@ -113,6 +165,19 @@
 % -------------------------------------------------------------------------------------------
 % -------------------------------------------------------------------------------------------
 
+
+\section{Porównanie efektywności stratnych metod kompresji}
+
+
+Na poniższych wykresach widać ze im większy stopień kompresji 
+(im mniejsza jakość kompresji)
+tym mniejszy rozmiar plików ale też tym mniejsza wartość wskaźnika PNSR 
+(im mniejszy tym gorszej jakości kompresja)
+
+
+
+
+
 \renewcommand{\ww}{0.16}
 
 \begin{figure}
@@ -142,7 +207,7 @@
     \captionsetup[subfloat]{position=bottom,labelformat=empty} %można usunąć labelformat wówczas będzie label a), b), c) plus "opis"
     
     \subfloat[  ]{\includegraphics[ width=\ww\linewidth]{../matlab/pnsr_jpg.png   }} \hfill%
-    \subfloat[  ]{\includegraphics[ width=\ww\linewidth]{../matlab/pnsr_jpg.png   }} \hfill%
+    \subfloat[  ]{\includegraphics[ width=\ww\linewidth]{../matlab/size_jpg.png   }} \hfill%
 
     \caption{rozmiar pliku i wskaźnik jakości PNSR w zależności od stopnia kompresji dla formatu JPG} %
     \label{fig:fig1}
@@ -181,7 +246,7 @@
     \captionsetup[subfloat]{position=bottom,labelformat=empty} %można usunąć labelformat wówczas będzie label a), b), c) plus "opis"
     
     \subfloat[  ]{\includegraphics[ width=\ww\linewidth]{../matlab/pnsr_jp2.png   }} \hfill%
-    \subfloat[  ]{\includegraphics[ width=\ww\linewidth]{../matlab/pnsr_jp2.png   }} \hfill%
+    \subfloat[  ]{\includegraphics[ width=\ww\linewidth]{../matlab/size_jp2.png   }} \hfill%
 
     \caption{rozmiar pliku i wskaźnik jakości PNSR w zależności od stopnia kompresji dla formatu JP2} %
     \label{fig:fig1}
