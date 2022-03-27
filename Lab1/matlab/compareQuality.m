@@ -7,9 +7,9 @@ Target = "img"
 
 
 
-quality = [0:5:100] 
+%quality = [0:5:100] 
 
-%quality = round( logspace(0, 3, 12) );
+quality = round( logspace(0, 3, 12) );
 
 
 [A, map] = imread(Source);
@@ -22,11 +22,11 @@ for q = quality
 
     qualityString = sprintf( '%03d', q ) ;
 
-    targetFile = append( Folder, '\', qualityString, Target, '.jpg' )
+    targetFile = append( Folder, '\', qualityString, Target, '.jp2' )
     if size(map) == [0 0]
-        imwrite(A, targetFile, quality=q);
+        imwrite(A, targetFile, CompressionRatio=q);
     else
-        imwrite(A,map, targetFile, quality=q);
+        imwrite(A,map, targetFile, CompressionRatio=q);
     end
 
 end
@@ -39,7 +39,7 @@ rozmiar1 = []
 for q = quality
 
     qualityString = sprintf( '%03d', q ) ;
-    targetFile = append( Folder, '\', qualityString, Target, '.jpg' )
+    targetFile = append( Folder, '\', qualityString, Target, '.jp2' )
     
     [A1,map1] = imread(targetFile);
     
@@ -65,12 +65,19 @@ xlabel("Quality")
 ylabel("Size, kB")
 
 
+figure
+plot( rozmiar1/1024, pnsr1)
+grid on
+xlabel("Size, kB")
+ylabel("PNSR, dB")
+
+
 % zmniejszenie rozmiaru pliku
 
 for q = quality
 
     qualityString = sprintf( '%03d', q ) ;
-    targetFile = append( Folder, '\', qualityString, Target, '.jpg' )
+    targetFile = append( Folder, '\', qualityString, Target, '.jp2' )
     
     [A1,map1] = imread(targetFile);
     
