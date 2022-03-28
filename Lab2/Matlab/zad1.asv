@@ -1,0 +1,50 @@
+clear all
+close all
+clc
+
+
+inputFileNameCFA = "..\Obrazy\Bayer\CFA_sRGB\cienkopisy_srgb_CFA.png"
+inputFileNameRGB = "..\Obrazy\Bayer\GT_sRGB\cienkopisy_srgb.png"
+
+targetFolder = "..\zad1\img1"
+
+mkdir(targetFolder)
+
+I_all = cell(2,3);
+
+I   = imread(inputFileNameCFA);
+IGT = imread(inputFileNameRGB);
+I1  = demosaic(I,'gbrg'); %podobnie I2,I3,I4
+I2  = demosaic(I,'grbg'); %podobnie I2,I3,I4
+I3  = demosaic(I,'bggr'); %podobnie I2,I3,I4
+I4  = demosaic(I,'rggb'); %podobnie I2,I3,I4
+
+
+cropImage = @(A) A(10:end-10,10:end-10,:)
+
+
+figure()
+title("XD")
+subplot(2,3,1);
+    imshow(cropImage(I));
+subplot(2,3,4);
+    imshow(cropImage(IGT));
+
+subplot(2,3,2);
+    imshow(cropImage(I1));
+subplot(2,3,3);
+    imshow(cropImage(I2));
+subplot(2,3,5);
+    imshow(cropImage(I3));
+subplot(2,3,6);
+    imshow(cropImage(I4));
+
+
+imwrite(I,    append(targetFolder, "\img1_raw_.png"))
+imwrite(IGT,  append(targetFolder, "\img1_gt__.png"))
+
+imwrite(I1,   append(targetFolder, "\img1_gbrg.png"))
+imwrite(I2,   append(targetFolder, "\img1_grbg.png"))
+imwrite(I3,   append(targetFolder, "\img1_bggr.png"))
+imwrite(I4,   append(targetFolder, "\img1_rggb.png"))
+
