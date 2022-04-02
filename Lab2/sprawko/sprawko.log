@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.15)  30 MAR 2022 21:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.15)  31 MAR 2022 19:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -541,85 +541,369 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 \@floatcapt=\box69
 ) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/placeins/placeins.sty
 Package: placeins 2005/04/18  v 2.2
-) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/mdwtools/sverb.sty
+Package: sverb 1996/05/08 1.3 Verbatim typesetting
+\svtab=\dimen290
+\listingindent=\dimen291
+\sv@writefile=\write4
+\sv@nestcount=\count318
+) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/import/import.sty
+Package: import 2020/04/01  v 6.2
+)
+(d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2020-07-07 v1.5u LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks42
+\verbatim@line=\toks43
+\verbatim@in@stream=\read3
+) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count319
+\lst@gtempboxa=\box70
+\lst@token=\toks44
+\lst@length=\count320
+\lst@currlwidth=\dimen292
+\lst@column=\count321
+\lst@pos=\count322
+\lst@lostspace=\dimen293
+\lst@width=\dimen294
+\lst@newlines=\count323
+\lst@lineno=\count324
+\lst@maxwidth=\dimen295
+ (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count325
+\lst@skipnumbers=\count326
+\lst@framebox=\box71
+) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+ (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2022-02-07 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count318
-\l__pdf_internal_box=\box70
-) (./sprawko.aux)
+\l__color_backend_stack_int=\count327
+\l__pdf_internal_box=\box72
+) (./sprawko.aux
+
+LaTeX Warning: Label `fig:porownanie1' multiply defined.
+
+
+LaTeX Warning: Label `fig:porownanie1' multiply defined.
+
+
+LaTeX Warning: Label `fig:porownanie1' multiply defined.
+
+
+LaTeX Warning: Label `fig:porownanie1' multiply defined.
+
+
+LaTeX Warning: Label `fig:porownanie1' multiply defined.
+
+
+LaTeX Warning: Label `fig:porownanie1' multiply defined.
+
+)
 \openout1 = `sprawko.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 23.
-LaTeX Font Info:    ... okay on input line 23.
-Package hyperref Info: Link coloring OFF on input line 23.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+Package hyperref Info: Link coloring OFF on input line 28.
  (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2021-04-02 v2.47 Cross-referencing by name of section
-
-(d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
+ (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/refcount/refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 ) (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
-\c@section@level=\count319
+\c@section@level=\count328
 )
-LaTeX Info: Redefining \ref on input line 23.
-LaTeX Info: Redefining \pageref on input line 23.
-LaTeX Info: Redefining \nameref on input line 23.
+LaTeX Info: Redefining \ref on input line 28.
+LaTeX Info: Redefining \pageref on input line 28.
+LaTeX Info: Redefining \nameref on input line 28.
  (./sprawko.out) (./sprawko.out)
-\@outlinefile=\write4
-\openout4 = `sprawko.out'.
+\@outlinefile=\write5
+\openout5 = `sprawko.out'.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: subfig package v1.3 is loaded.
 Package caption Info: float package is loaded.
+Package caption Info: listings package is loaded.
 Package caption Info: End \AtBeginDocument code.
  (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count320
-\scratchdimen=\dimen290
-\scratchbox=\box71
-\nofMPsegments=\count321
-\nofMParguments=\count322
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count323
-\MPscratchDim=\dimen291
-\MPnumerator=\count324
-\makeMPintoPDFobject=\count325
-\everyMPtoPDFconversion=\toks43
-) [1
+\scratchcounter=\count329
+\scratchdimen=\dimen296
+\scratchbox=\box73
+\nofMPsegments=\count330
+\nofMParguments=\count331
+\everyMPshowfont=\toks45
+\MPscratchCnt=\count332
+\MPscratchDim=\dimen297
+\MPnumerator=\count333
+\makeMPintoPDFobject=\count334
+\everyMPtoPDFconversion=\toks46
+)
+\c@lstlisting=\count335
+ [1
 
-{d:/Program Files/TexLive/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./sprawko.aux)
+{d:/Program Files/TexLive/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+<../zad1/img1/img1_raw_.png, id=15, 147.55125pt x 95.35625pt>
+File: ../zad1/img1/img1_raw_.png Graphic file (type png)
+<use ../zad1/img1/img1_raw_.png>
+Package pdftex.def Info: ../zad1/img1/img1_raw_.png  used on input line 57.
+(pdftex.def)             Requested size: 103.50105pt x 66.89005pt.
+<../zad1/img1/img1_gbrg.png, id=16, 147.55125pt x 95.35625pt>
+File: ../zad1/img1/img1_gbrg.png Graphic file (type png)
+<use ../zad1/img1/img1_gbrg.png>
+Package pdftex.def Info: ../zad1/img1/img1_gbrg.png  used on input line 58.
+(pdftex.def)             Requested size: 103.50105pt x 66.89005pt.
+<../zad1/img1/img1_grbg.png, id=17, 147.55125pt x 95.35625pt>
+File: ../zad1/img1/img1_grbg.png Graphic file (type png)
+<use ../zad1/img1/img1_grbg.png>
+Package pdftex.def Info: ../zad1/img1/img1_grbg.png  used on input line 59.
+(pdftex.def)             Requested size: 103.50105pt x 66.89005pt.
+<../zad1/img1/img1_gt__.png, id=18, 147.55125pt x 95.35625pt>
+File: ../zad1/img1/img1_gt__.png Graphic file (type png)
+<use ../zad1/img1/img1_gt__.png>
+Package pdftex.def Info: ../zad1/img1/img1_gt__.png  used on input line 60.
+(pdftex.def)             Requested size: 103.50105pt x 66.89005pt.
+<../zad1/img1/img1_bggr.png, id=19, 147.55125pt x 95.35625pt>
+File: ../zad1/img1/img1_bggr.png Graphic file (type png)
+<use ../zad1/img1/img1_bggr.png>
+Package pdftex.def Info: ../zad1/img1/img1_bggr.png  used on input line 61.
+(pdftex.def)             Requested size: 103.50105pt x 66.89005pt.
+<../zad1/img1/img1_rggb.png, id=20, 147.55125pt x 95.35625pt>
+File: ../zad1/img1/img1_rggb.png Graphic file (type png)
+<use ../zad1/img1/img1_rggb.png>
+Package pdftex.def Info: ../zad1/img1/img1_rggb.png  used on input line 62.
+(pdftex.def)             Requested size: 103.50105pt x 66.89005pt.
+<../zad1/img07/img1_raw_.png, id=21, 183.68625pt x 119.44624pt>
+File: ../zad1/img07/img1_raw_.png Graphic file (type png)
+<use ../zad1/img07/img1_raw_.png>
+Package pdftex.def Info: ../zad1/img07/img1_raw_.png  used on input line 70.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img07/img1_gbrg.png, id=22, 183.68625pt x 119.44624pt>
+File: ../zad1/img07/img1_gbrg.png Graphic file (type png)
+<use ../zad1/img07/img1_gbrg.png>
+Package pdftex.def Info: ../zad1/img07/img1_gbrg.png  used on input line 71.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img07/img1_grbg.png, id=23, 183.68625pt x 119.44624pt>
+File: ../zad1/img07/img1_grbg.png Graphic file (type png)
+<use ../zad1/img07/img1_grbg.png>
+Package pdftex.def Info: ../zad1/img07/img1_grbg.png  used on input line 72.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img07/img1_gt__.png, id=24, 183.68625pt x 119.44624pt>
+File: ../zad1/img07/img1_gt__.png Graphic file (type png)
+<use ../zad1/img07/img1_gt__.png>
+Package pdftex.def Info: ../zad1/img07/img1_gt__.png  used on input line 73.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img07/img1_bggr.png, id=25, 183.68625pt x 119.44624pt>
+File: ../zad1/img07/img1_bggr.png Graphic file (type png)
+<use ../zad1/img07/img1_bggr.png>
+Package pdftex.def Info: ../zad1/img07/img1_bggr.png  used on input line 74.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img07/img1_rggb.png, id=26, 183.68625pt x 119.44624pt>
+File: ../zad1/img07/img1_rggb.png Graphic file (type png)
+<use ../zad1/img07/img1_rggb.png>
+Package pdftex.def Info: ../zad1/img07/img1_rggb.png  used on input line 75.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img08/img1_raw_.png, id=27, 183.68625pt x 119.44624pt>
+File: ../zad1/img08/img1_raw_.png Graphic file (type png)
+<use ../zad1/img08/img1_raw_.png>
+Package pdftex.def Info: ../zad1/img08/img1_raw_.png  used on input line 84.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img08/img1_gbrg.png, id=28, 183.68625pt x 119.44624pt>
+File: ../zad1/img08/img1_gbrg.png Graphic file (type png)
+<use ../zad1/img08/img1_gbrg.png>
+Package pdftex.def Info: ../zad1/img08/img1_gbrg.png  used on input line 85.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img08/img1_grbg.png, id=29, 183.68625pt x 119.44624pt>
+File: ../zad1/img08/img1_grbg.png Graphic file (type png)
+<use ../zad1/img08/img1_grbg.png>
+Package pdftex.def Info: ../zad1/img08/img1_grbg.png  used on input line 86.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img08/img1_gt__.png, id=30, 183.68625pt x 119.44624pt>
+File: ../zad1/img08/img1_gt__.png Graphic file (type png)
+<use ../zad1/img08/img1_gt__.png>
+Package pdftex.def Info: ../zad1/img08/img1_gt__.png  used on input line 87.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img08/img1_bggr.png, id=31, 183.68625pt x 119.44624pt>
+File: ../zad1/img08/img1_bggr.png Graphic file (type png)
+<use ../zad1/img08/img1_bggr.png>
+Package pdftex.def Info: ../zad1/img08/img1_bggr.png  used on input line 88.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+<../zad1/img08/img1_rggb.png, id=32, 183.68625pt x 119.44624pt>
+File: ../zad1/img08/img1_rggb.png Graphic file (type png)
+<use ../zad1/img08/img1_rggb.png>
+Package pdftex.def Info: ../zad1/img08/img1_rggb.png  used on input line 89.
+(pdftex.def)             Requested size: 103.50105pt x 67.30498pt.
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.93 
+      [1 <../zad1/img1/img1_raw_.png (PNG copy)> <../zad1/img1/img1_gbrg.png (PNG copy)> <../zad1/img1/img1_grbg.png (PNG copy)> <../zad1/img1/img1_gt__.png (PNG copy)> <../zad1/img1/img1_bggr.png (PNG copy)> <../zad1/img1/img1_rggb.png (PNG copy)> <../zad1/img07/img1_raw_.png (PNG copy)> <../zad1/img07/img1_gbrg.png (PNG copy)> <../zad1/img07/img1_grbg.png (PNG copy)> <../zad1/img07/img1_gt__.png (PNG copy)> <../zad1/img07/img1_bggr.png (PNG copy)> <../zad1/img07/img1_rggb.png (PNG copy)>]
+<../zad2/img01/img1_orig.png, id=53, 119.44624pt x 81.30376pt>
+File: ../zad2/img01/img1_orig.png Graphic file (type png)
+<use ../zad2/img01/img1_orig.png>
+Package pdftex.def Info: ../zad2/img01/img1_orig.png  used on input line 101.
+(pdftex.def)             Requested size: 103.50105pt x 70.44958pt.
+<../zad2/img01/img1_NN__.png, id=54, 119.44624pt x 81.30376pt>
+File: ../zad2/img01/img1_NN__.png Graphic file (type png)
+<use ../zad2/img01/img1_NN__.png>
+Package pdftex.def Info: ../zad2/img01/img1_NN__.png  used on input line 102.
+(pdftex.def)             Requested size: 103.50105pt x 70.44958pt.
+<../zad2/img01/img1_reff.png, id=55, 119.44624pt x 81.30376pt>
+File: ../zad2/img01/img1_reff.png Graphic file (type png)
+<use ../zad2/img01/img1_reff.png>
+Package pdftex.def Info: ../zad2/img01/img1_reff.png  used on input line 103.
+(pdftex.def)             Requested size: 103.50105pt x 70.44958pt.
+<../zad2/img08/img1_orig.png, id=56, 131.49126pt x 87.32625pt>
+File: ../zad2/img08/img1_orig.png Graphic file (type png)
+<use ../zad2/img08/img1_orig.png>
+Package pdftex.def Info: ../zad2/img08/img1_orig.png  used on input line 104.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img08/img1_NN__.png, id=57, 131.49126pt x 87.32625pt>
+File: ../zad2/img08/img1_NN__.png Graphic file (type png)
+<use ../zad2/img08/img1_NN__.png>
+Package pdftex.def Info: ../zad2/img08/img1_NN__.png  used on input line 105.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img08/img1_reff.png, id=58, 131.49126pt x 87.32625pt>
+File: ../zad2/img08/img1_reff.png Graphic file (type png)
+<use ../zad2/img08/img1_reff.png>
+Package pdftex.def Info: ../zad2/img08/img1_reff.png  used on input line 106.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img22/img1_orig.png, id=59, 131.49126pt x 87.32625pt>
+File: ../zad2/img22/img1_orig.png Graphic file (type png)
+<use ../zad2/img22/img1_orig.png>
+Package pdftex.def Info: ../zad2/img22/img1_orig.png  used on input line 115.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img22/img1_NN__.png, id=60, 131.49126pt x 87.32625pt>
+File: ../zad2/img22/img1_NN__.png Graphic file (type png)
+<use ../zad2/img22/img1_NN__.png>
+Package pdftex.def Info: ../zad2/img22/img1_NN__.png  used on input line 116.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img22/img1_reff.png, id=61, 131.49126pt x 87.32625pt>
+File: ../zad2/img22/img1_reff.png Graphic file (type png)
+<use ../zad2/img22/img1_reff.png>
+Package pdftex.def Info: ../zad2/img22/img1_reff.png  used on input line 117.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img29/img1_orig.png, id=62, 131.49126pt x 87.32625pt>
+File: ../zad2/img29/img1_orig.png Graphic file (type png)
+<use ../zad2/img29/img1_orig.png>
+Package pdftex.def Info: ../zad2/img29/img1_orig.png  used on input line 118.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img29/img1_NN__.png, id=63, 131.49126pt x 87.32625pt>
+File: ../zad2/img29/img1_NN__.png Graphic file (type png)
+<use ../zad2/img29/img1_NN__.png>
+Package pdftex.def Info: ../zad2/img29/img1_NN__.png  used on input line 119.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad2/img29/img1_reff.png, id=64, 131.49126pt x 87.32625pt>
+File: ../zad2/img29/img1_reff.png Graphic file (type png)
+<use ../zad2/img29/img1_reff.png>
+Package pdftex.def Info: ../zad2/img29/img1_reff.png  used on input line 120.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+ [2 <../zad1/img08/img1_raw_.png (PNG copy)> <../zad1/img08/img1_gbrg.png (PNG copy)> <../zad1/img08/img1_grbg.png (PNG copy)> <../zad1/img08/img1_gt__.png (PNG copy)> <../zad1/img08/img1_bggr.png (PNG copy)> <../zad1/img08/img1_rggb.png (PNG copy)> <../zad2/img01/img1_orig.png (PNG copy)> <../zad2/img01/img1_NN__.png (PNG copy)> <../zad2/img01/img1_reff.png (PNG copy)> <../zad2/img08/img1_orig.png (PNG copy)> <../zad2/img08/img1_NN__.png (PNG copy)> <../zad2/img08/img1_reff.png (PNG copy)>]
+<../zad3/img01/img1_orig.png, id=84, 119.44624pt x 81.30376pt>
+File: ../zad3/img01/img1_orig.png Graphic file (type png)
+<use ../zad3/img01/img1_orig.png>
+Package pdftex.def Info: ../zad3/img01/img1_orig.png  used on input line 130.
+(pdftex.def)             Requested size: 103.50105pt x 70.44958pt.
+<../zad3/img01/img1_NN__.png, id=85, 119.44624pt x 81.30376pt>
+File: ../zad3/img01/img1_NN__.png Graphic file (type png)
+<use ../zad3/img01/img1_NN__.png>
+Package pdftex.def Info: ../zad3/img01/img1_NN__.png  used on input line 131.
+(pdftex.def)             Requested size: 103.50105pt x 70.44958pt.
+<../zad3/img01/img1_reff.png, id=86, 119.44624pt x 81.30376pt>
+File: ../zad3/img01/img1_reff.png Graphic file (type png)
+<use ../zad3/img01/img1_reff.png>
+Package pdftex.def Info: ../zad3/img01/img1_reff.png  used on input line 132.
+(pdftex.def)             Requested size: 103.50105pt x 70.44958pt.
+<../zad3/img08/img1_orig.png, id=87, 131.49126pt x 87.32625pt>
+File: ../zad3/img08/img1_orig.png Graphic file (type png)
+<use ../zad3/img08/img1_orig.png>
+Package pdftex.def Info: ../zad3/img08/img1_orig.png  used on input line 133.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img08/img1_NN__.png, id=88, 131.49126pt x 87.32625pt>
+File: ../zad3/img08/img1_NN__.png Graphic file (type png)
+<use ../zad3/img08/img1_NN__.png>
+Package pdftex.def Info: ../zad3/img08/img1_NN__.png  used on input line 134.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img08/img1_reff.png, id=89, 131.49126pt x 87.32625pt>
+File: ../zad3/img08/img1_reff.png Graphic file (type png)
+<use ../zad3/img08/img1_reff.png>
+Package pdftex.def Info: ../zad3/img08/img1_reff.png  used on input line 135.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img22/img1_orig.png, id=90, 131.49126pt x 87.32625pt>
+File: ../zad3/img22/img1_orig.png Graphic file (type png)
+<use ../zad3/img22/img1_orig.png>
+Package pdftex.def Info: ../zad3/img22/img1_orig.png  used on input line 144.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img22/img1_NN__.png, id=91, 131.49126pt x 87.32625pt>
+File: ../zad3/img22/img1_NN__.png Graphic file (type png)
+<use ../zad3/img22/img1_NN__.png>
+Package pdftex.def Info: ../zad3/img22/img1_NN__.png  used on input line 145.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img22/img1_reff.png, id=92, 131.49126pt x 87.32625pt>
+File: ../zad3/img22/img1_reff.png Graphic file (type png)
+<use ../zad3/img22/img1_reff.png>
+Package pdftex.def Info: ../zad3/img22/img1_reff.png  used on input line 146.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img29/img1_orig.png, id=93, 131.49126pt x 87.32625pt>
+File: ../zad3/img29/img1_orig.png Graphic file (type png)
+<use ../zad3/img29/img1_orig.png>
+Package pdftex.def Info: ../zad3/img29/img1_orig.png  used on input line 147.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img29/img1_NN__.png, id=94, 131.49126pt x 87.32625pt>
+File: ../zad3/img29/img1_NN__.png Graphic file (type png)
+<use ../zad3/img29/img1_NN__.png>
+Package pdftex.def Info: ../zad3/img29/img1_NN__.png  used on input line 148.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+<../zad3/img29/img1_reff.png, id=95, 131.49126pt x 87.32625pt>
+File: ../zad3/img29/img1_reff.png Graphic file (type png)
+<use ../zad3/img29/img1_reff.png>
+Package pdftex.def Info: ../zad3/img29/img1_reff.png  used on input line 149.
+(pdftex.def)             Requested size: 103.50105pt x 68.74046pt.
+ [3 <../zad2/img22/img1_orig.png (PNG copy)> <../zad2/img22/img1_NN__.png (PNG copy)> <../zad2/img22/img1_reff.png (PNG copy)> <../zad2/img29/img1_orig.png (PNG copy)> <../zad2/img29/img1_NN__.png (PNG copy)> <../zad2/img29/img1_reff.png (PNG copy)> <../zad3/img01/img1_orig.png (PNG copy)> <../zad3/img01/img1_NN__.png (PNG copy)> <../zad3/img01/img1_reff.png (PNG copy)> <../zad3/img08/img1_orig.png (PNG copy)> <../zad3/img08/img1_NN__.png (PNG copy)> <../zad3/img08/img1_reff.png (PNG copy)>] [4 <../zad3/img22/img1_orig.png (PNG copy)> <../zad3/img22/img1_NN__.png (PNG copy)> <../zad3/img22/img1_reff.png (PNG copy)> <../zad3/img29/img1_orig.png (PNG copy)> <../zad3/img29/img1_NN__.png (PNG copy)> <../zad3/img29/img1_reff.png (PNG copy)>] (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2020/03/24 1.8d listings language file
+)
+Package hyperref Info: bookmark level for unknown lstlisting defaults to 0 on input line 188.
+LaTeX Font Info:    Trying to load font information for T1+cmtt on input line 188.
+ (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/base/t1cmtt.fd
+File: t1cmtt.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+) (../Matlab/zad1.m [5] [6] [7]) [8] (../Matlab/zad2.m [9] [10]) [11] (../Matlab/zad3.m [12] [13]) [14] (../Matlab/demosaic_nearest.m) [15] (../Matlab/demosaic_bilinear.m [16]) [17] (../Matlab/cropImage.m) [18] (./sprawko.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `sprawko.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 23211 strings out of 478276
- 441253 string characters out of 5839477
- 675237 words of memory out of 5000000
- 41019 multiletter control sequences out of 15000+600000
- 473111 words of font info for 33 fonts, out of 8000000 for 9000
+ 26689 strings out of 478276
+ 495252 string characters out of 5839477
+ 1398588 words of memory out of 5000000
+ 43792 multiletter control sequences out of 15000+600000
+ 476807 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 125i,5n,120p,459b,374s stack positions out of 5000i,500n,10000p,200000b,80000s
-{d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on sprawko.pdf (1 page, 40700 bytes).
+ 125i,10n,120p,459b,2596s stack positions out of 5000i,500n,10000p,200000b,80000s
+{d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
+Output written on sprawko.pdf (19 pages, 1172890 bytes).
 PDF statistics:
- 32 PDF objects out of 1000 (max. 8388607)
- 22 compressed objects within 1 object stream
- 2 named destinations out of 1000 (max. 500000)
- 13 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 921 PDF objects out of 1000 (max. 8388607)
+ 833 compressed objects within 9 object streams
+ 631 named destinations out of 1000 (max. 500000)
+ 223 words of extra memory for PDF output out of 10000 (max. 10000000)
 
