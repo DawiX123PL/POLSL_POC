@@ -1,0 +1,78 @@
+
+
+% wariant 2 
+function [colorMap] = count_rgb(I)
+
+
+    %colors(red, green, blue) = count
+    colors  = zeros(256,256,256);
+
+
+
+    for x = 1:size(I, 1)
+        disp(x)
+        for y = 1:size(I, 2)
+            r = I(x,y,1) + 1;
+            g = I(x,y,2) + 1;
+            b = I(x,y,3) + 1;
+    
+            colors(r, g, b) = colors(r, g, b) + 1;
+
+        end
+    end
+
+
+    %colorMap = [red, green, blue, count]
+    colorMap = []
+
+    for i = size(colors,1)
+        for j = size(colors,2)
+            for k = size(colors,3)
+                if()
+            end
+        end
+    end
+
+
+end
+
+
+
+% wariant 1 
+
+function [colors] = count_rgb1(I)
+
+
+    %colors = [red, green, blue, count]
+    colors  = []
+
+
+
+    for x = 1:size(I, 1)
+        disp(x)
+        for y = 1:size(I, 2)
+            
+            found = false;
+            ci = [I(x,y,1)  I(x,y,2)  I(x,y,3) ];
+            
+            for i = 1:size(colors,1)
+                c  = colors(i,1:end-1);
+                if isequal(ci, c)
+                    colors(i, 4) = colors(i, 4) + 1;
+                    found = true;
+                    break;
+                end
+            end
+
+            if found ~= true
+                colors = [colors; ci, 1];
+            end
+
+
+        end
+    end
+
+
+
+end
+

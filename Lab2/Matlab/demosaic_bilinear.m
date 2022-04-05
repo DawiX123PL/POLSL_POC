@@ -17,9 +17,9 @@ function A1 = demosaic_bilinear(A, color)
     for x = 1:2:s(1)
         for y = 1:2:s(2)
 
-            %  a1 | a2 
-            % ----|----
-            %  a3 | a4
+            %  a1 | X |a2 
+            % -X--|-X-| X
+            %  a3 | X |a4
             
             a1 = A( x-1 + indexOffset, y-1 + indexOffset );
             a2 = A( x+1 + indexOffset, y-1 + indexOffset );
