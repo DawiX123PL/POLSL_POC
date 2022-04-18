@@ -3,6 +3,17 @@
 % wariant 3
 function [colorList] = count_rgb3(I)
 
+    % convert double to uint32
+    if class(I) == "double"
+        I = uint32(I * 255);
+    end
+
+
+    % just to prevent stupid bug with +1 
+    if class(I) == "uint8"
+        I = uint32(I);
+    end
+
     s_x = size(I,1);
     s_y = size(I,2);
     s_z = size(I,3);

@@ -3,8 +3,16 @@
 % wariant 2
 function [colorMap] = count_rgb2(I)
 
+    % convert double to uint32
+    if class(I) == "double"
+        I = uint32(I * 255);
+    end
+
+
     % just to prevent stupid bug with +1 
-    I = uint32(I);
+    if class(I) == "uint8"
+        I = uint32(I);
+    end
 
     x_max = size(I,1);
     y_max = size(I,2);
