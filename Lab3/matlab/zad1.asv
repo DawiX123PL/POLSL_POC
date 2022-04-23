@@ -1,0 +1,36 @@
+clear all
+close all
+clc
+
+%fid = fopen('zad1_count.txt','w');
+%fprintf(fid, 'liczba barw POClab = %d \\\\ liczba barw skrypt = %d  \\\\ czas =  %0.4fs \n', countRGB, countRGB,  time1 );
+%fclose(fid);
+
+zad1_count("..\obrazy\cienkopisy_srgb.png")
+
+
+
+function [zad] = zad1_count( nazwa )
+
+    I1_RGB = imread(nazwa);
+    I1_HSV = rgb2hsv(I1_RGB);
+    I1_YCbCr = rgb2lab(I1_RGB);
+    
+    
+    disp count_rgb
+    tic 
+    countRGB   = size(count_rgb4(I1_RGB), 1) 
+    time1 = toc
+    countHSV   = size(count_rgb4(I1_HSV), 1) 
+    countYCbCr = size(count_rgb4(I1_YCbCr), 1) 
+
+    zad = sprintf( 'POClab = %d \\\\ RGB = %d  \\\\ czas =  %0.4fs \n', countRGB, countRGB,  time1 );
+
+end
+
+
+
+
+
+
+

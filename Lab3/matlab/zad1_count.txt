@@ -1,0 +1,4 @@
+POClab = 54450 \\ RGB = 54450  \\ HSV = 54450 \\ YCbCr = 54450 \\ czas =  1.6995 s 
+POClab = 230651 \\ RGB = 230651  \\ HSV = 230651 \\ YCbCr = 230651 \\ czas =  26.3035 s 
+POClab = 148702 \\ RGB = 148702  \\ HSV = 148702 \\ YCbCr = 148702 \\ czas =  9.3294 s 
+POClab = 111344 \\ RGB = 111344  \\ HSV = 111344 \\ YCbCr = 111344 \\ czas =  4.9705 s 

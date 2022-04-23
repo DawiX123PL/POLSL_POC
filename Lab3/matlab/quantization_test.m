@@ -12,12 +12,18 @@ I_hsv = rgb2hsv(I_rgb);
 
 % quantization
 
-I1 = image_quantization(I_rgb, [3 2 2]);
-I2 = image_quantization(I_hsv, [3 0 3]);
+
+I1 = image_quantization(I_rgb, [5 5 5]);
+I2 = image_quantization(I_hsv, [5 5 5 10]);
+
 
 c = count_rgb4(I_rgb);
+
+
+
 c1 = count_rgb4(I1);
 c2 = count_rgb4(I2);
+
 
 subplot(1,3,1);
 imshow(I_rgb)
