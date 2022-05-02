@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.12)  2 MAY 2022 19:53
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.12)  2 MAY 2022 20:13
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -651,7 +651,12 @@ File: other/polsl.png Graphic file (type png)
 <use other/polsl.png>
 Package pdftex.def Info: other/polsl.png  used on input line 4.
 (pdftex.def)             Requested size: 172.5pt x 222.00838pt.
- [1
+
+Underfull \hbox (badness 10000) in paragraph at lines 14--18
+
+ []
+
+[1
 
 
 {d:/ProgramFiles/Latex/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map} <./other/polsl.png>])
@@ -989,7 +994,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  132i,10n,125p,474b,462s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb>
-Output written on raport.pdf (10 pages, 6237983 bytes).
+Output written on raport.pdf (10 pages, 6238875 bytes).
 PDF statistics:
  222 PDF objects out of 1000 (max. 8388607)
  152 compressed objects within 2 object streams

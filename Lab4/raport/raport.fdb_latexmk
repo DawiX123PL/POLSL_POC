@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1651514023 "c:/Users/Dawid/Desktop/POC/Lab4/raport/raport.tex" "raport.pdf" "raport" 1651514026
+["pdflatex"] 1651515181 "c:/Users/Dawid/Desktop/POC/Lab4/raport/raport.tex" "raport.pdf" "raport" 1651515183
   "../img/q16/i1/FS256.png" 1651512885 215682 38eec80057a49afd288b8c094e2d1ff5 ""
   "../img/q16/i1/FS_16.png" 1651512884 157091 203e63431e3618a14c2c02694d8b6c3f ""
   "../img/q16/i1/QU256.png" 1651512885 127851 1ec1fa1794da6c95f97e0e38676d0c0d ""
@@ -43,7 +43,7 @@
   "../img/q2/i6/FS__.png" 1651512773 47395 0b4d4cbbc2856fb6e753d2e141f8920b ""
   "../img/q2/i6/OTSU.png" 1651512773 24315 1f29c770148ad21478642d8f1b12f743 ""
   "../img/q2/i6/orig.png" 1651512773 205781 7f18752fa817c5f32a307306b8e1fec8 ""
-  "c:/Users/Dawid/Desktop/POC/Lab4/raport/raport.tex" 1651513830 12044 01415c2c191c67a9b829449b0842db29 ""
+  "c:/Users/Dawid/Desktop/POC/Lab4/raport/raport.tex" 1651514531 12044 01415c2c191c67a9b829449b0842db29 ""
   "d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1647112550 2971 def0b6c1f0b107b3b936def894055589 ""
   "d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1647113088 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/ProgramFiles/Latex/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbx1440.tfm" 1647112870 3584 13049b61b922a28b158a38aeff75ee9b ""
@@ -220,10 +220,10 @@
   "other/Empty.png" 1651506786 119 ce21cbdd9b894e6af794813eb3fdaf60 ""
   "other/header.tex" 1651514022 539 c451977814ab5dc1d112587f929039a1 ""
   "other/polsl.png" 1651493953 50884 03f140cee485ed17dc8d0d5d188b438b ""
-  "other/title.aux" 1651514025 990 fdbacd491c32fa7291d20a9959475e40 "pdflatex"
-  "other/title.tex" 1651513912 449 a3321d63e4774bdd46e9abb877e500e8 ""
-  "raport.aux" 1651514025 13010 3b5e4bbbb44ad9208e9571aa9aaf5682 "pdflatex"
-  "raport.out" 1651514025 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "other/title.aux" 1651515183 990 fdbacd491c32fa7291d20a9959475e40 "pdflatex"
+  "other/title.tex" 1651515180 527 19c9dec46e702510d13c531a00082be6 ""
+  "raport.aux" 1651515183 13010 3b5e4bbbb44ad9208e9571aa9aaf5682 "pdflatex"
+  "raport.out" 1651515182 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   (generated)
   "other/title.aux"
   "raport.aux"
