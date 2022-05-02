@@ -3,22 +3,22 @@ close all
 clc
 
 
-zad1_RGB("..\obrazy\baboon_512x512.bmp"   , "..\zad2\rgb1")
-zad1_RGB("..\obrazy\lena_512x512.bmp"     , "..\zad2\rgb2")
-zad1_RGB("..\obrazy\peppers3_512x512.bmp" , "..\zad2\rgb3")
-zad1_RGB("..\obrazy\bangko_13_512x512.png", "..\zad2\rgb4")
-zad1_RGB("..\obrazy\frymire_512x512.png"  , "..\zad2\rgb5")
-zad1_RGB("..\obrazy\kodim23_512x512.png"  , "..\zad2\rgb6")
+zad1_RGB("..\obrazy\baboon_512x512.bmp"   , "..\zad2\rgb1", [.1 .1 .1 .1])
+zad1_RGB("..\obrazy\lena_512x512.bmp"     , "..\zad2\rgb2", [.1 .1 .1 .1])
+zad1_RGB("..\obrazy\peppers3_512x512.bmp" , "..\zad2\rgb3", [.1 .1 .1 .1])
+zad1_RGB("..\obrazy\bangko_13_512x512.png", "..\zad2\rgb4", [.1 .1 .1 .1])
+zad1_RGB("..\obrazy\frymire_512x512.png"  , "..\zad2\rgb5", [.1 .1 .1 .1])
+zad1_RGB("..\obrazy\kodim23_512x512.png"  , "..\zad2\rgb6", [.1 .1 .1 .1])
 
-zad1_HSV("..\obrazy\baboon_512x512.bmp"   , "..\zad2\hsv1")
-zad1_HSV("..\obrazy\lena_512x512.bmp"     , "..\zad2\hsv2")
-zad1_HSV("..\obrazy\peppers3_512x512.bmp" , "..\zad2\hsv3")
-zad1_HSV("..\obrazy\bangko_13_512x512.png", "..\zad2\hsv4")
-zad1_HSV("..\obrazy\frymire_512x512.png"  , "..\zad2\hsv5")
-zad1_HSV("..\obrazy\kodim23_512x512.png"  , "..\zad2\hsv6")
+zad1_HSV("..\obrazy\baboon_512x512.bmp"   , "..\zad2\hsv1", [.1 .1 .1 .1])
+zad1_HSV("..\obrazy\lena_512x512.bmp"     , "..\zad2\hsv2", [.1 .1 .1 .1])
+zad1_HSV("..\obrazy\peppers3_512x512.bmp" , "..\zad2\hsv3", [.1 .1 .1 .1])
+zad1_HSV("..\obrazy\bangko_13_512x512.png", "..\zad2\hsv4", [.1 .1 .1 .1])
+zad1_HSV("..\obrazy\frymire_512x512.png"  , "..\zad2\hsv5", [.1 .1 .1 .1])
+zad1_HSV("..\obrazy\kodim23_512x512.png"  , "..\zad2\hsv6", [.1 .1 .1 .1])
 
 
-function ret = zad1_RGB(nazwa, targetName)
+function ret = zad1_RGB(nazwa, targetName, cImg)
     
     I1 = imread(nazwa);
     
@@ -59,11 +59,11 @@ function ret = zad1_RGB(nazwa, targetName)
 
     mkdir(targetName)
 
-    imwrite(I1     , targetName +  "/I1_ori.png");
-    imwrite(I1_222 , targetName +  "/I1_222.png");
-    imwrite(I1_444 , targetName +  "/I1_444.png");    
-    imwrite(I1_464 , targetName +  "/I1_464.png");
-    imwrite(I1_884 , targetName +  "/I1_884.png");  
+    imwrite(cropImage(I1    ,cImg) , targetName +  "/I1_ori.png");
+    imwrite(cropImage(I1_222,cImg) , targetName +  "/I1_222.png");
+    imwrite(cropImage(I1_444,cImg) , targetName +  "/I1_444.png");    
+    imwrite(cropImage(I1_464,cImg) , targetName +  "/I1_464.png");
+    imwrite(cropImage(I1_884,cImg) , targetName +  "/I1_884.png");  
 
 
     fid = fopen(targetName +  "/data",'w');
@@ -74,7 +74,7 @@ function ret = zad1_RGB(nazwa, targetName)
 end
 
 
-function ret = zad1_HSV(nazwa, targetName)
+function ret = zad1_HSV(nazwa, targetName, cImg)
     
     I1 = imread(nazwa);
     
@@ -104,9 +104,9 @@ function ret = zad1_HSV(nazwa, targetName)
     mkdir(targetName)
     
 
-    imwrite(hsv2rgb(I1   ), targetName +  "/I1_ori.png");
-    imwrite(hsv2rgb(I1_10), targetName +  "/I1_222.png");
-    imwrite(hsv2rgb(I1_12), targetName +  "/I1_444.png");
+    imwrite(cropImage(hsv2rgb(I1   ),cImg), targetName +  "/I1_ori.png");
+    imwrite(cropImage(hsv2rgb(I1_10),cImg), targetName +  "/I1_222.png");
+    imwrite(cropImage(hsv2rgb(I1_12),cImg), targetName +  "/I1_444.png");
 
 
     fid = fopen(targetName +  "/data",'w');

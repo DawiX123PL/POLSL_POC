@@ -1,5 +1,5 @@
 
-%                       image, [2 3 4]
+%                       image, [2 3 4 + 10]
 function I1 = image_quantization(I, divider)
 
     [I, classname] = change_class(I);
