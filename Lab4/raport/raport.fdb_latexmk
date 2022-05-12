@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1652305974 "c:/Users/dawid/Desktop/POC/POLSL_POC/Lab4/raport/raport.tex" "raport.pdf" "raport" 1652305979
+["pdflatex"] 1652360439 "c:/Users/dawid/Desktop/POC/POLSL_POC/Lab4/raport/raport.tex" "raport.pdf" "raport" 1652360446
   "../img/q16/i1/FS256.png" 1652305731 216026 a1756bd81b195793b6ae4409a954f1df ""
   "../img/q16/i1/FS_16.png" 1652305731 157515 4bb89867c1498294cd7e01c51450b55c ""
   "../img/q16/i1/Pr256.png" 1652299209 274967 70360a33b8334ceb4b08a80f9f62d368 ""
@@ -236,10 +236,10 @@
   "other/Empty.png" 1651739954 119 08552c17ebc2d40c6f63b3c3222de1f0 ""
   "other/header.tex" 1651739954 539 ab308131996ee66034db66583c5b6cfa ""
   "other/polsl.png" 1651739954 50884 255ff4dedbb58043a18cf57b423ff400 ""
-  "other/title.aux" 1652305977 990 fdbacd491c32fa7291d20a9959475e40 "pdflatex"
-  "other/title.tex" 1651739954 527 1b3f6ed58fb50624337fefb011ed8d90 ""
-  "raport.aux" 1652305978 13010 3b5e4bbbb44ad9208e9571aa9aaf5682 "pdflatex"
-  "raport.out" 1652305977 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "other/title.aux" 1652360444 990 fdbacd491c32fa7291d20a9959475e40 "pdflatex"
+  "other/title.tex" 1652360436 527 e2a725427074eedd5d571a297061870f ""
+  "raport.aux" 1652360445 13010 3b5e4bbbb44ad9208e9571aa9aaf5682 "pdflatex"
+  "raport.out" 1652360443 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
   "raport.tex" 1652305972 12091 450a88e260d14934029b331bc14b4a9e ""
   (generated)
   "other/title.aux"
