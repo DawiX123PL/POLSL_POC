@@ -1,11 +1,20 @@
-clear all
+%clear all
 close all
 clc
 
-source = "../Obrazy/kodim23_512x512.png"
-I1 = imread(source);
+source = "../Obrazy/baboon_512x512.bmp";
+I1 = rgb2gray(imread(source));
+I1 = double(I1) ./ 255;
 
-imshow(rgb2gray(I1))
+
+I2 = HistogramStretch(I1,"NoCut");
+
+figure; imshow(I1);
+figure; imhist(I1);
+
+figure; imshow(I2);
+figure; imhist(I2);
+
 
 K1 = k1(I1)
 K2 = k2(I1)
