@@ -77,7 +77,7 @@ function ProduceImages(source, destination, cut)
     % zapis do plikow
     mkdir(destination);
 
-    crop = [.12 .12 .12 .12];
+    crop = [.13 .13 .13 .13];
     
     if cut == "NoCut"
         imwrite(cropImage(I1, crop), destination + "/I_Origin.png");
