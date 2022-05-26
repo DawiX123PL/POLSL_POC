@@ -34,10 +34,11 @@ function ProduceImages(source, destination, select)
 
     if select ==  "LOCAL"
         I2 = HistogramStretch(I1, "Auto");
-        I3 = LocalContrastFix2(I1,7);
+        %I3 = LocalContrastFix2(I1,7);
+        I3 = LocalContrastFix(I1, [6 6], 0.001);
     elseif select ==  "CLAHE"
-        I2 = adapthisteq(I1);
-        I3 = adapthisteq(I1);
+        I2 = adapthisteq(I1,'NumTiles',[8 8],'ClipLimit',0.005);
+        I3 = adapthisteq(I1,'NumTiles',[8 8],'ClipLimit',0.01);
     end
 
 

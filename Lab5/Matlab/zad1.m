@@ -49,8 +49,8 @@ function ProduceImages(source, destination, cut)
         % sztuczne dodanie czarnego i białego pixela
         I1(1,1) = 1;
         I1(1,2) = 0;
-        I2 = HistogramStretch(I1, "Auto");
-        I3 = HistogramStretch(I1, "Histeq");
+        I2 = HistogramStretch(I1, "Cut Insignificant", [.001 .001]);
+        I3 = HistogramStretch(I1, "Cut Insignificant", [.02 .02]);
     end
     
     
@@ -79,13 +79,23 @@ function ProduceImages(source, destination, cut)
 
     crop = [.12 .12 .12 .12];
     
-    imwrite(cropImage(I1, crop), destination + "/I_Origin.png");
-    imwrite(cropImage(I2, crop), destination + "/I_No_Cut.png");
-    imwrite(cropImage(I3, crop), destination + "/I_Histeq.png");
-    
-    saveas(H1, destination + "/H_Origin.png");
-    saveas(H2, destination + "/H_No_Cut.png");
-    saveas(H3, destination + "/H_Histeq.png");
+    if cut == "NoCut"
+        imwrite(cropImage(I1, crop), destination + "/I_Origin.png");
+        imwrite(cropImage(I2, crop), destination + "/I_No_Cut.png");
+        imwrite(cropImage(I3, crop), destination + "/I_Histeq.png");
+        
+        saveas(H1, destination + "/H_Origin.png");
+        saveas(H2, destination + "/H_No_Cut.png");
+        saveas(H3, destination + "/H_Histeq.png");
+    elseif cut == "WithCut"
+        imwrite(cropImage(I1, crop), destination + "/I_Origin.png");
+        imwrite(cropImage(I2, crop), destination + "/I_Cut_P1.png");
+        imwrite(cropImage(I3, crop), destination + "/I_Cut_P2.png");
+        
+        saveas(H1, destination + "/H_Origin.png");
+        saveas(H2, destination + "/H_Cut_P1.png");
+        saveas(H3, destination + "/H_Cut_P2.png");
+    end
     
     close([H1 H2 H3])
 

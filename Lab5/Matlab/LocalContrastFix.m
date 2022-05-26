@@ -1,8 +1,14 @@
 
 
-function I2 = LocalContrastFix(I1)
+function I2 = LocalContrastFix(I1, divider,CutVal)
     
-    divider = [4 4];
+    if exist('divider','var') ~= 1
+        divider = [8 8];
+    end
+    if exist('CutVal','var') ~= 1
+        CutVal = 0.001;
+    end
+
     steps   = [16 16];
     
     subImWidth = size(I1) ./ divider;
@@ -17,7 +23,7 @@ function I2 = LocalContrastFix(I1)
     
     for yOffset = yOffsets
         for xOffset = xOffsets
-            subIms(:,:,i) = CreateSubImage(divider, I1, xOffset, yOffset);
+            subIms(:,:,i) = CreateSubImage(divider, I1, xOffset, yOffset, [1 1] * CutVal);
             i = i + 1;
         end
     end
@@ -29,7 +35,7 @@ end
 
 
 
-function subIm1 = CreateSubImage(divider, I1, xOffset, yOffset)
+function subIm1 = CreateSubImage(divider, I1, xOffset, yOffset, cutVal)
     
     posRangeX = [0:divider(1)+1] ./ divider(1) * size(I1,2);
     posRangeX = [posRangeX(1:end-1); posRangeX(2:end)];
@@ -55,7 +61,7 @@ function subIm1 = CreateSubImage(divider, I1, xOffset, yOffset)
             y = min(y,size(I1,1));
             
             subIm1(y(1):y(2), x(1):x(2)) = ...
-                HistogramStretch(I1(y(1):y(2), x(1):x(2)), "Auto");
+                HistogramStretch(I1(y(1):y(2), x(1):x(2)), "Cut Insignificant", cutVal);
             
         end
     end
