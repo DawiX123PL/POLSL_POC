@@ -1,0 +1,39 @@
+function fileContentImages = CreateLatexImages(images, descriptions, label)
+
+        
+
+        begining = join([ ...
+            "\newcommand{\ww}{" + 100 / size(images,2) + "} ";
+            "\begin{figure}[H] ";
+            "    \captionsetup[subfloat]{justification=raggedright,singlelinecheck=false, position=bottom,labelformat=empty} % ";
+             ],newline );
+
+        ending = join([ ...
+
+        fileContentImages = join([ ...
+            "    \subfloat[";
+            "       Wielkość obrazu O1: " + join(string(size(I1a)), "x") + "]{";
+            "       \includegraphics[width=\ww\linewidth]{" + destination1 + "/O1___.png}} \hfill%";
+            "    \subfloat[";
+            "       Wielkość obrazu: "  + join(string(size(I2a)), "x") + "\\ Wielkość maski: " + join(string(size(mask2a)) + "x")+ "]{"; 
+            "       \includegraphics[width=\ww\linewidth]{" + destination1 + "/O1_Md.png}} \hfill% wypełnenie";
+            "    \subfloat[";
+            "       Wielkość maski Md: "  + join(string(size(I3a)), "x") + "\\ Wielkość maski: " + join(string(size(mask3a)) + "x")+ "]{";
+            "       \includegraphics[width=\ww\linewidth]{" +  destination1 +  "/O1_Mg.png}} \\ ";
+            "    \subfloat[";
+            "       Wielkość obrazu O2: " + join(string(size(I1b)), "x")+ "]{";
+            "       \includegraphics[width=\ww\linewidth]{" +  destination2 +  "/O1___.png}} \hfill%";
+            "    \subfloat[";
+            "       Wielkość obrazu: " + join(string(size(I2b)), "x") + "\\ Wielkość maski: " + join(string(size(mask2b)) + "x")+ "]{";
+            "       \includegraphics[width=\ww\linewidth]{" +  destination2 +  "/O1_Md.png}} \hfill";
+            "    \subfloat[";
+            "       Wielkość maski Mg: " + join(string(size(I3b)), "x") + "\\ Wielkość maski: " + join(string(size(mask3b)) + "x")+ "]{";
+            "       \includegraphics[width=\ww\linewidth]{" +  destination2 +  "/O1_Mg.png}}";
+            "    \caption{Tekst do zmiany}  ";
+            "    \label{fig:" + (texFileDir(1) + texFileDir(2)) + "} ";
+            "\end{figure} ";
+            "\let\ww\undefined "...
+            ],newline );
+
+
+end
