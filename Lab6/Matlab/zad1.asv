@@ -1,0 +1,55 @@
+clear all;
+close all;
+clc
+
+source = "..\Obrazy\lena_512x512.bmp";
+destination = "..\zad1";
+
+I = imread(source);
+I = double(I) / 255;
+I = rgb2gray(I);
+I = I(1:500, :);
+
+I1 = I;
+
+Md = ones(3) / 9;
+I2 = filter_Linear(I1, Md);
+
+Mg = [0 -1  0; -1  4 -1; 0 -1  0];
+I3 = filter_Linear(I1, Mg);
+
+
+figure;
+tiledlayout(1,3);
+
+nexttile;
+imshow(I1);
+
+nexttile;
+imshow(I2);
+
+nexttile;
+imshow(I3);
+
+
+mkdir(destination);
+
+imwrite()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

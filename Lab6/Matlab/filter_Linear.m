@@ -1,4 +1,4 @@
-function I1 = filter_Linear(I, Kernel)
+function [I1, Kernel] = filter_Linear(I, Kernel)
 
     s = size(I);
     I1 = zeros(s);
