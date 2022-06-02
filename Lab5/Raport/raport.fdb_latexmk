@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1653563901 "c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex" "raport.pdf" "raport" 1653563907
+["pdflatex"] 1653564445 "c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex" "raport.pdf" "raport" 1653564450
   "../Matlab/HistogramStretch.m" 1653329468 1351 e059c2dc477de5f684c9132174e0bc7b ""
   "../Matlab/LocalContrastFix.m" 1653560636 1646 ae055c8b3b9d9d2b1938f56e47df5a68 ""
   "../Matlab/LocalContrastFix2.m" 1653329468 1154 d9533173846e3e6689e53afbb0a25bf4 ""
@@ -106,7 +106,7 @@
   "../zad2/Local/I4/I_Global.png" 1653560979 160973 94ab68b47d1ddc4ba0b1e8bae5b7865c ""
   "../zad2/Local/I4/I_LocalF.png" 1653560979 250634 f60575675af8886bd7af81874ef00a9d ""
   "../zad2/Local/I4/I_Origin.png" 1653560979 141838 5a7741560f7b013cb3c339e086b74add ""
-  "c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex" 1653563640 20288 882ee870e0a81048f302c6e1461ce60f ""
+  "c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex" 1653564442 20286 93ef3817c305fc917f47533364e42fb9 ""
   "d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc" 1647379655 2971 def0b6c1f0b107b3b936def894055589 ""
   "d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/map/fontname/texfonts.map" 1647380790 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/tfm/jknappen/ec/ecbx1200.tfm" 1647380281 3584 402da0b29eafbad07963b1224b222f18 ""
@@ -302,11 +302,11 @@
   "other/codeStyle.tex" 1653329468 866 8e4fde92e517f8f1c39830aa54248108 ""
   "other/header.tex" 1653329468 539 ab308131996ee66034db66583c5b6cfa ""
   "other/polsl.png" 1653329468 50884 255ff4dedbb58043a18cf57b423ff400 ""
-  "other/title.aux" 1653563904 990 fdbacd491c32fa7291d20a9959475e40 "pdflatex"
+  "other/title.aux" 1653564448 990 fdbacd491c32fa7291d20a9959475e40 "pdflatex"
   "other/title.tex" 1653563899 509 5d206f4e1771749e86638e57feb6e8f0 ""
-  "raport.aux" 1653563906 22915 5c616728f225847712427a95db030bda "pdflatex"
-  "raport.out" 1653563904 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "raport.tex" 1653563640 20288 882ee870e0a81048f302c6e1461ce60f ""
+  "raport.aux" 1653564450 22915 5c616728f225847712427a95db030bda "pdflatex"
+  "raport.out" 1653564447 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "raport.tex" 1653564442 20286 93ef3817c305fc917f47533364e42fb9 ""
   (generated)
   "other/title.aux"
   "raport.aux"

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.15)  26 MAY 2022 13:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2022.3.15)  26 MAY 2022 13:27
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -6,11 +6,7 @@ entering extended mode
 **c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex
 (c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex
 LaTeX2e <2021-11-15> patch level 1
-L3 programming layer <2022-02-24>
-
-LaTeX Warning: \include should only be used after \begin{document} on input line 1.
-
-(./other/header.tex (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/base/report.cls
+L3 programming layer <2022-02-24> (./other/header.tex (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/base/report.cls
 Document Class: report 2021/10/04 v1.4n Standard LaTeX document class
 (d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/base/size10.clo
 File: size10.clo 2021/10/04 v1.4n Standard LaTeX file (size option)
@@ -1185,13 +1181,13 @@ Package rerunfilecheck Info: File `raport.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 26983 strings out of 478276
- 507967 string characters out of 5839477
+ 26982 strings out of 478276
+ 507943 string characters out of 5839477
  1390470 words of memory out of 5000000
- 43928 multiletter control sequences out of 15000+600000
+ 43927 multiletter control sequences out of 15000+600000
  481318 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 132i,13n,125p,484b,1830s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 130i,13n,123p,482b,1830s stack positions out of 5000i,500n,10000p,200000b,80000s
 {d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1200.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfbx2488.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0500.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sfrm1440.pfb><d:/Program Files/TexLive/texlive/2021/texmf-dist/fonts/type1/public/cm-super/sftt0800.pfb>
 Output written on raport.pdf (33 pages, 10374137 bytes).
 PDF statistics:

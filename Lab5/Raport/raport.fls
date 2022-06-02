@@ -5,11 +5,7 @@ INPUT d:/Program Files/TexLive/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT c:/Users/dawid/Desktop/POC/POLSL_POC/Lab5/Raport/raport.tex
 OUTPUT raport.log
 INPUT ./other/header.tex
-INPUT ./other/header.tex
-INPUT ./other/header.tex
-INPUT ./other/header.tex
 INPUT other/header.tex
-INPUT ./other/header.tex
 INPUT ./other/header.tex
 INPUT other/header.tex
 INPUT d:/Program Files/TexLive/texlive/2021/texmf-dist/tex/latex/base/report.cls
