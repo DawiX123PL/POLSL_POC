@@ -7,6 +7,15 @@ function latexMatrix = mat2Latex(mat, precision)
         str =  compose("%." + (precision-1) + "f", double(sym(mantisa)))...
              + "^{" + string(exponent) + "}";
 
+        for y = 1:size(mat,1)
+            for x = 1:size(mat,2)
+                if mat(x,y) == 0
+                    str(x,y) = "0";
+                end
+            end
+        end
+         
+
         str = join(str, " & ");
         str = join(str, " \\ " + newline);
 

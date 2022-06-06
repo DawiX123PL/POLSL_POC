@@ -1,5 +1,5 @@
 clear all;
-%close all;
+close all;
 clc
 
 
@@ -40,17 +40,18 @@ function [I1, I2, I3, I4, I5, I6, maskMd, maskMg] = ProcessImage(source, destina
 
     I1 = I; % "clean" image
 
-    I2 = awgn(I1, 20);
-    %I2 = I1 + rand(size(I1)) / 10;
+    %I2 = awgn(I1, 20);
+    I2 = imnoise(I1,'salt & pepper',0.1);
 
     %[I3, maskMd] = filter_Gausian(I2, 4, 0.48); % low-pass filter
-    %[I3, maskMd] = filter_Gausian(I2, 4, 2); % low-pass filter
-    [I3, maskMd] = filter_Mean(I2, 3); % low-pass filter
+    [I3, maskMd] = filter_Gausian(I2, 4, 2); % low-pass filter
+    %[I3, maskMd] = filter_Mean(I2, 3); % low-pass filter
     I4 = I2 - I3;
     
-    %[I5, maskMg] = filter_LOG(I3,3,0.71); % hi-pass filter
-    [I5, maskMg] = filter_Laplacian(I3); % hi-pass filter
-    I6 = I2 + I5;
+    [I6, maskMg] = filter_LOG(I3,3, 1); % hi-pass filter
+    %[I5, maskMg] = filter_Laplacian(I3); % hi-pass filter
+    I5 = I3 + I6;
+    
     
     
     maskMd
@@ -65,11 +66,11 @@ function [I1, I2, I3, I4, I5, I6, maskMd, maskMg] = ProcessImage(source, destina
 
     nexttile; imshow(I1);
     nexttile; imshow(I3);
-    nexttile; imshow(I5 * 2 + .5);
+    nexttile; imshow(I5);
 
     nexttile; imshow(I2);
     nexttile; imshow(I4 * 2 + .5);
-    nexttile; imshow(I6);
+    nexttile; imshow(I6 * 2 + .5);
     
 
     [~,~] = mkdir(destination);
@@ -78,8 +79,8 @@ function [I1, I2, I3, I4, I5, I6, maskMd, maskMg] = ProcessImage(source, destina
     imwrite(I2, destination + "/I2.png");
     imwrite(I3, destination + "/I3.png");
     imwrite(I4 * 1.5 + .5, destination + "/I4.png");
-    imwrite(I5 * 1.5 + .5, destination + "/I5.png");
-    imwrite(I6, destination + "/I6.png");
+    imwrite(I5, destination + "/I5.png");
+    imwrite(I6 * 1.5 + .5, destination + "/I6.png");
 
 end
 
@@ -94,10 +95,10 @@ function CreateTexFile(source, destination,texFileDir)
     imDesc = [...
         "Wielkość obrazu O1: " + join(string(size(I1)), "x") , ...
         "Wielkość obrazu Id: " + join(string(size(I3)), "x") + "\\ PSNR = " + string(psnr(I3,I1)), ...
-        "Wielkość obrazu I: "  + join(string(size(I5)), "x"); ...
+        "Wielkość obrazu I: "  + join(string(size(I5)), "x") + "\\ PSNR = " + string(psnr(I5,I1)),; ...
         "Os = O + szum" + "\\ PSNR = " + string(psnr(I2,I1)), ...
-        "O - Id", ...
-        "O - I" + "\\ PSNR = " + string(psnr(I6,I1)), ...
+        "Os - Id", ...
+        "Os - I"  ...
         ];
 
     

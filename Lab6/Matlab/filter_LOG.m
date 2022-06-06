@@ -9,6 +9,8 @@ function [I1, mask] = filter_LOG(I,windowSize, ro)
     tmp = (x.^2 + y.^2) / (2 * ro^2);
     mask = (-1/(pi*ro^4)) .* (1-tmp) .* exp(-tmp);
 
+    mask = - mask;
+
     I1 = filter_Linear(I,mask);
 
 
