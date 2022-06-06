@@ -68,7 +68,7 @@ function [I1, I2, I3, mask2, mask3] = ProcessImage(source, destination)
 %     imshow(I3);
     
     % saving images on disk
-    mkdir(destination);
+    [~,~] = mkdir(destination);
     
     imwrite(I1, destination + "/O1___.png");
     imwrite(I2, destination + "/O1_Md.png");
@@ -88,44 +88,16 @@ function CreateTexFile(source1, destination1, source2, destination2, texFileDir)
 
 
         imDesc = ["Wielkość obrazu O1: " + join(string(size(I1a)), "x") , ...
-                  "Wielkość obrazu: "  + join(string(size(I2a)), "x") + "\\ Wielkość maski: " + join(string(size(mask2a)) + "x"), ...
-                  "Wielkość obrazu: "  + join(string(size(I3a)), "x") + "\\ Wielkość maski: " + join(string(size(mask3a)) + "x"); ...
+                  "Wielkość obrazu: "  + join(string(size(I2a)), "x") + "\\ Wielkość maski: " + join(string(size(mask2a)), "x"), ...
+                  "Wielkość obrazu: "  + join(string(size(I3a)), "x") + "\\ Wielkość maski: " + join(string(size(mask3a)), "x"); ...
                   "Wielkość obrazu O1: " + join(string(size(I1b)), "x"), ...
-                  "Wielkość obrazu: "  + join(string(size(I2b)), "x") + "\\ Wielkość maski: " + join(string(size(mask2b)) + "x"), ...
-                  "Wielkość obrazu: "  + join(string(size(I3b)), "x") + "\\ Wielkość maski: " + join(string(size(mask3b)) + "x"); ...
+                  "Wielkość obrazu: "  + join(string(size(I2b)), "x") + "\\ Wielkość maski: " + join(string(size(mask2b)), "x"), ...
+                  "Wielkość obrazu: "  + join(string(size(I3b)), "x") + "\\ Wielkość maski: " + join(string(size(mask3b)), "x"); ...
                   ];
 
 
         fileContentImages = CreateLatexImages(imPath, imDesc, "Porownanie", (texFileDir(1) + texFileDir(2)));
-        
-%         fileContentImages = join([ ...
-%             "\newcommand{\ww}{0.32} ";
-%             "\begin{figure}[H] ";
-%             "    \captionsetup[subfloat]{justification=raggedright,singlelinecheck=false, position=bottom,labelformat=empty} % ";
-%             "    \subfloat[";
-%             "       Wielkość obrazu O1: " + join(string(size(I1a)), "x") + "]{";
-%             "       \includegraphics[width=\ww\linewidth]{" + destination1 + "/O1___.png}} \hfill%";
-%             "    \subfloat[";
-%             "       Wielkość obrazu: "  + join(string(size(I2a)), "x") + "\\ Wielkość maski: " + join(string(size(mask2a)) + "x")+ "]{"; 
-%             "       \includegraphics[width=\ww\linewidth]{" + destination1 + "/O1_Md.png}} \hfill% wypełnenie";
-%             "    \subfloat[";
-%             "       Wielkość maski Md: "  + join(string(size(I3a)), "x") + "\\ Wielkość maski: " + join(string(size(mask3a)) + "x")+ "]{";
-%             "       \includegraphics[width=\ww\linewidth]{" +  destination1 +  "/O1_Mg.png}} \\ ";
-%             "    \subfloat[";
-%             "       Wielkość obrazu O2: " + join(string(size(I1b)), "x")+ "]{";
-%             "       \includegraphics[width=\ww\linewidth]{" +  destination2 +  "/O1___.png}} \hfill%";
-%             "    \subfloat[";
-%             "       Wielkość obrazu: " + join(string(size(I2b)), "x") + "\\ Wielkość maski: " + join(string(size(mask2b)) + "x")+ "]{";
-%             "       \includegraphics[width=\ww\linewidth]{" +  destination2 +  "/O1_Md.png}} \hfill";
-%             "    \subfloat[";
-%             "       Wielkość maski Mg: " + join(string(size(I3b)), "x") + "\\ Wielkość maski: " + join(string(size(mask3b)) + "x")+ "]{";
-%             "       \includegraphics[width=\ww\linewidth]{" +  destination2 +  "/O1_Mg.png}}";
-%             "    \caption{Tekst do zmiany}  ";
-%             "    \label{fig:" + (texFileDir(1) + texFileDir(2)) + "} ";
-%             "\end{figure} ";
-%             "\let\ww\undefined "...
-%             ],newline );
-% 
+      
 
         maskDescription = join([ ...
             "maski użyte do filtracji obrazu:";
@@ -152,14 +124,4 @@ function CreateTexFile(source1, destination1, source2, destination2, texFileDir)
         fprintf(fid1, '%s', fileContent);
         fclose(fid1);
         
-end
-
-function latexMatrix = mat2Latex(mat)
-    latexMatrix = latex(sym(mat));
-    latexMatrix = strrep(latexMatrix, "array", "bmatrix")
-    latexMatrix = strrep(latexMatrix, "\left(", " ")
-    latexMatrix = strrep(latexMatrix, "\right)", " ")
-    ccc = "{" + join(repmat("c", [size(mat,2),1]),"") + "}"
-    latexMatrix = strrep(latexMatrix, ccc, " ")
-    latexMatrix = strrep(latexMatrix, "\\", "\\[6pt]" + newline)
 end

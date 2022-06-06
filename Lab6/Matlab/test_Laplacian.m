@@ -8,9 +8,9 @@ I = double(I) / 255;
 I = rgb2gray(I);
 I = I(1:500, :);
 
+[I1, mask] = filter_Laplacian(I);
 
-I1 = filter_Laplacian(I, 5, 1);
-
+mask
 
 tiledlayout(1,2);
 nexttile;

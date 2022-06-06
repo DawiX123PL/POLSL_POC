@@ -15,9 +15,6 @@ function [I1, Kernel] = filter_Linear(I, Kernel)
     Ones2 = ones([1 + Offset2, 1]);
 
     
-
-   % I1 = I1(floor(borderSize(1)):end-ceil(borderSize(1)), floor(borderSize(2)):end-ceil(borderSize(2)) );
-
     for y = 1:s(1)
         for x = 1:s(2)
             
